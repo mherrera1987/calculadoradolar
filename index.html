@@ -21,6 +21,7 @@
                 <label for="dolares">Ingrese la cantidad de dólares (USD)</label>
                 <input id="dolares" type="number" value=""/>
                 <button onclick="porcentaje()">Calcular</button>
+                <p class="valores">Cotización (Fuente: Dolarsi) <span id="cotDolar" data-cotizacion=""></span></p>
                 <p class="valores">TOTAL (sin impuestos) <span id="valorDolar"></span></p>
                 <p class="valores">+ Impuesto PAIS (30%) <span id="valorPais"></span></p>
                 <p class="valores">+ Impuesto Ganancias (45%) <span id="valorGanancias"></span></p>
@@ -31,6 +32,7 @@
     <footer>
         <p>Desarrollado por <a href="https://marceloherrera.com.ar" target="_blank">Marcelo Herrera</a>.</p>
     </footer>
+    <script src="api.js" type="module"></script>
     <script src="script.js"></script>
 </body>
 </html>

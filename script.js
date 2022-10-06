@@ -1,5 +1,6 @@
 function porcentaje() {
-    let cotDolar = 155.25;
+    let cotDolarScrap = document.getElementById('cotDolar').dataset.cotizacion;
+    let cotDolar = cotDolarScrap.replace(/,/g, '.');
     const impPais = 30;
     const impGanancias = 45; 
     let dolares = document.getElementById("dolares").value;
