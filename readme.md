@@ -5,7 +5,7 @@ Esta calculadora te permite estimar los consumos en USD en tu tarjeta de crédit
 ## Tecnologías utilizadas
 * HTML5
 * CSS3
-* JAVSCRIPT
+* JAVASCRIPT
 
 ## ¿Cómo funciona?
 En primer lugar obtiene la cotización del dólar oficial através del a API de [Dolarsi.com](https://www.dolarsi.com), a partir de alli comienza a realizar las operaciones aritméticas correspondientes para sumar los impuestos.
