@@ -13,3 +13,9 @@ function porcentaje() {
     document.getElementById("valorGanancias").innerHTML = '$ ' + (valorGanancias.toFixed(2));
     document.getElementById("valorTotal").innerHTML = '$ ' + (valorTotal.toFixed(2));
 }
+
+const visitanteApretoEnter = (event) =>
+{
+    if(event.keyCode == 13)
+        porcentaje();
+}
