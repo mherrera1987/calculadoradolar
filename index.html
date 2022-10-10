@@ -19,7 +19,7 @@
         <section id="contenedor-calculadora">
             <div class="calculadora">
                 <label for="dolares">Ingrese la cantidad de dólares (USD)</label>
-                <input id="dolares" type="number" min="1" onkeydown="visitanteApretoEnter(event)" value=""/>
+                <input id="dolares" type="number" min="0" onkeydown="visitanteApretoEnter(event)" oninput="validity.valid||(value='');"/>
                 <button onclick="porcentaje()">Calcular</button>
                 <p class="valores">Cotización (Fuente: Dolarsi) <span id="cotDolar" data-cotizacion=""></span></p>
                 <p class="valores">TOTAL (sin impuestos) <span id="valorDolar"></span></p>
