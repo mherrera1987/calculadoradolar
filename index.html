@@ -13,17 +13,16 @@
 <body>
     <header>
         <h1>Calculadora dólar tarjeta</h1>
-        <h2>Impuesto País (30%) + Ganancias / Bienes personales (30%)</h2>
+        <h2>+ Ganancias / Bienes personales (30%)</h2>
     </header>
     <main>
         <section id="contenedor-calculadora">
             <div class="calculadora">
                 <label for="dolares">Ingrese la cantidad de dólares (USD)</label>
-                <input id="dolares" type="number" min="0" onkeydown="visitanteApretoEnter(event)" oninput="validity.valid||(value='');"/>
+                <input id="dolares" type="number" min="0" step="any" onkeydown="visitanteApretoEnter(event)" oninput="validity.valid||(value='');"/>
                 <button onclick="porcentaje()">Calcular</button>
                 <p class="valores">Cotización (Fuente: Dolarapi) <span id="cotDolar" data-cotizacion=""></span></p>
                 <p class="valores">TOTAL (sin impuestos) <span id="valorDolar"></span></p>
-                <p class="valores">+ Impuesto PAIS (30%) <span id="valorPais"></span></p>
                 <p class="valores">+ Ganancias / Bienes Personales (30%) <span id="valorGanancias"></span></p>
                 <p class="valores">TOTAL (con impuestos) <span id="valorTotal"></span></p>
             </div>

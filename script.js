@@ -12,13 +12,11 @@ fetch('https://dolarapi.com/v1/dolares/oficial')
 function porcentaje() {
     let cotDolarScrap = document.getElementById('cotDolar').dataset.cotizacion;
     let cotDolar = cotDolarScrap.replace(/,/g, '.');
-    const impPais = 30;
     const impGanancias = 30; 
     let dolares = document.getElementById("dolares").value;
     let valorDolar = dolares * cotDolar;
-    let valorPais = valorDolar * (impPais / 100);
     let valorGanancias = valorDolar * (impGanancias / 100);
-    let valorTotal = valorDolar + valorPais + valorGanancias;
+    let valorTotal = valorDolar + valorGanancias;
     
     // Función para formatear los números con separadores de miles y decimales
     function formatearNumero(numero) {
@@ -26,7 +24,6 @@ function porcentaje() {
     }
 
     document.getElementById("valorDolar").innerHTML = '$ ' + formatearNumero(valorDolar);
-    document.getElementById("valorPais").innerHTML = '$ ' + formatearNumero(valorPais);
     document.getElementById("valorGanancias").innerHTML = '$ ' + formatearNumero(valorGanancias);
     document.getElementById("valorTotal").innerHTML = '$ ' + formatearNumero(valorTotal);
 }
